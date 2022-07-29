@@ -19,8 +19,10 @@ function calculateSum(dob) {
 function checkNumberIsLucky() {
     const dob = dateOfBirth.value;
     const sum = calculateSum(dob); 
+    if(sum&&dob)
     compareValues(sum, luckyNumber.value)
-    
+    else
+    output.innerText="please enter both the fields"
 }
 
 function compareValues(sum, luckyNumber) {
